@@ -65,6 +65,27 @@ Markdown report template summarizing findings, savings, risks, and prevention st
 
 ---
 
+## Repo Layout
+azure-cli-cost-optimization-toolkit/
+│
+├── README.md
+├── /scripts
+│   └── cleanup-disks.ps1
+├── /policies
+│   └── deny-public-ip.json
+├── /alerts
+│   └── unattached-disks.bicep
+├── /docs
+│   ├── cost-optimization-report.md
+│   └── screenshots/
+│       ├── advisor-recommendations.png
+│       ├── cli-output.png
+│       └── powershell-dryrun.png
+
+-------
+
+
+
 ## Key Learnings
 - Copilot is ~80% accurate for KQL and PowerShell, but **manual validation is mandatory**.  
 - Azure CLI `--query` syntax requires careful review; Copilot hallucinated Bicep functions in JMESPath.  
